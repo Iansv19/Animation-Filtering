@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 5% 20%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.filter-container button{
+  margin-right: 2rem;
+  min-width: 5rem;
+  padding: 0.5rem 1rem;
+  border:none;
+  background-color: white;
+  color: rgb(65,98,168);
+  border-radius: 1rem;
+  border:2px solid rgb(65,98,168);
+  font-weight: bold;
+  cursor:pointer;
+  margin-bottom: 1rem;
+}
+
+button.active{
+ background-color: rgb(65,98,168);
+ color:white;
 }
